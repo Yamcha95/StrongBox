@@ -47,3 +47,5 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Sun Jun 08 11:37:28.188892 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
 [Sun Jun 08 11:37:28.200240 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.4. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 09 10:07:04.487128 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Mon Jun 09 10:07:04.487766 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
