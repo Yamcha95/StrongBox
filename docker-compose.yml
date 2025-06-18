@@ -10,6 +10,7 @@ services:
     restart: "on-failure"
     links:
       - database
+      - mongodb
     volumes:
       - ${DOCUMENT_ROOT-./www}:/var/www/html:rw
       - ${SHARED_ROOT-./shared}:/var/www/shared:rw
@@ -29,6 +30,7 @@ services:
       XDEBUG_CONFIG: "client_host=host.docker.internal remote_port=${XDEBUG_PORT}"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
   database:
     build:
       context: "./bin/${DATABASE}"
@@ -45,6 +47,20 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  mongodb:
+    image: mongo:6.0
+    container_name: "${COMPOSE_PROJECT_NAME}-mongodb"
+    restart: "on-failure"
+    ports:
+      - "27017:27017"
+    volumes:
+      - ${MONGO_DATA_DIR-./data/mongodb}:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+
   phpmyadmin:
     image: phpmyadmin
     container_name: "${COMPOSE_PROJECT_NAME}-phpmyadmin"
@@ -68,6 +84,7 @@ services:
     volumes:
       - /sessions
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+
   mailhog:
     image: jcalonso/mailhog
     container_name: "${COMPOSE_PROJECT_NAME}-mailhog"
