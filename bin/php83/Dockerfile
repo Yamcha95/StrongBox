@@ -14,7 +14,8 @@ RUN apt-get -y update && \
     apt-get -y --no-install-recommends install nano wget dialog \
     libsqlite3-dev libsqlite3-0 default-mysql-client zlib1g-dev \
     libzip-dev libicu-dev apt-utils build-essential git curl \
-    libonig-dev iputils-ping libcurl4 libcurl4-openssl-dev zip openssl && \
+    libonig-dev iputils-ping libcurl4 libcurl4-openssl-dev zip openssl \
+    libssl-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Installation de Composer
@@ -32,6 +33,10 @@ RUN pecl install xdebug-3.3.1 && \
 # Installation de Redis
 RUN pecl install redis-6.0.2 && \
     docker-php-ext-enable redis
+
+# Installation de l'extension MongoDB
+RUN pecl install mongodb && \
+    docker-php-ext-enable mongodb
 
 # Installation de Imagick
 RUN apt-get update && \
@@ -81,17 +86,6 @@ RUN a2enmod ssl && a2enmod rewrite
 
 # Activation des modules Apache nécessaires
 RUN a2enmod rewrite headers
-
-# Configuration d'Apache pour Symfony
-#RUN echo "<VirtualHost *:80> \
-   # DocumentRoot /var/www/html/public \
-   # <Directory /var/www/html/public> \
-        #AllowOverride All \
-       # Require all granted \
-    #</Directory> \
-    #ErrorLog \${APACHE_LOG_DIR}/error.log \
-    #CustomLog \${APACHE_LOG_DIR}/access.log combined \
-#</VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 
 # Nettoyage
 RUN rm -rf /usr/src/*

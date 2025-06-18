@@ -5,6 +5,7 @@
     },
     "require": {
         "symfony/orm-pack": "^2.4",
-        "doctrine/doctrine-migrations-bundle": "^3.4"
+        "doctrine/doctrine-migrations-bundle": "^3.4",
+        "doctrine/mongodb-odm-bundle": "^5.3"
     }
 }
