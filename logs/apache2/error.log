@@ -94,3 +94,22 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Tue Jun 17 13:00:41.421324 2025] [php:notice] [pid 18:tid 18] [client 192.168.65.1:42288] 2025-06-17T13:00:41+00:00 [critical] Uncaught Exception: Invalid service "App\\Service\\EncryptionService": class "App\\Service\\EncryptionService" does not exist., referer: http://localhost/profile
 [Tue Jun 17 13:01:22.429170 2025] [php:notice] [pid 17:tid 17] [client 192.168.65.1:20361] 2025-06-17T13:01:22+00:00 [critical] Uncaught Exception: Invalid service "App\\Service\\EncryptionService": class "App\\Service\\EncryptionService" does not exist., referer: http://localhost/profile
 [Tue Jun 17 13:43:22.237487 2025] [php:notice] [pid 17:tid 17] [client 192.168.65.1:59883] 2025-06-17T13:43:22+00:00 [critical] Uncaught Exception: The file "/var/www/html/config/packages/framework.yaml" does not contain valid YAML: Duplicate key "framework" detected at line 18 in /var/www/html/config/packages/framework.yaml (which is being imported from "/var/www/html/src/Kernel.php")., referer: http://localhost/
+[Wed Jun 18 18:40:29.625578 2025] [php:notice] [pid 19:tid 19] [client 192.168.65.1:36003] 2025-06-18T18:40:29+00:00 [critical] Uncaught Exception: Class "MongoDB\\Driver\\Monitoring\\CommandSubscriber" not found while loading "Doctrine\\Bundle\\MongoDBBundle\\APM\\StopwatchCommandLogger"., referer: http://localhost/
+[Wed Jun 18 18:42:49.246481 2025] [php:notice] [pid 37:tid 37] [client 192.168.65.1:34329] 2025-06-18T18:42:49+00:00 [critical] Uncaught Exception: Class "MongoDB\\Driver\\Monitoring\\CommandSubscriber" not found while loading "Doctrine\\Bundle\\MongoDBBundle\\APM\\StopwatchCommandLogger"., referer: http://localhost/
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.5. Set the 'ServerName' directive globally to suppress this message
+[Wed Jun 18 18:50:47.881069 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Wed Jun 18 18:50:47.881281 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 19 09:39:26.804577 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Thu Jun 19 09:39:26.804960 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 19 09:39:30.908730 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 19 09:39:32.378882 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Thu Jun 19 09:39:32.379021 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 19 09:53:29.370015 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 19 09:53:39.212254 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Thu Jun 19 09:53:39.212620 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 19 10:19:06.394572 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Thu Jun 19 10:19:06.394771 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

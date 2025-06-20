@@ -35,8 +35,11 @@ RUN pecl install redis-6.0.2 && \
     docker-php-ext-enable redis
 
 # Installation de l'extension MongoDB
-RUN pecl install mongodb && \
+RUN apt-get update && \
+    apt-get install -y libssl-dev pkg-config && \
+    pecl install mongodb && \
     docker-php-ext-enable mongodb
+
 
 # Installation de Imagick
 RUN apt-get update && \
