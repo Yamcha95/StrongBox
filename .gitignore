@@ -1,1 +1,24 @@
+# --- Environnements ---
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# --- Symfony ---
+/var/
+/vendor/
+node_modules/
+/public/build/
+
+# --- Docker ---
 /data/
+/logs/
+/config/initdb
+
+# --- IDE & OS ---
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak

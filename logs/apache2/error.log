@@ -113,3 +113,59 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
 [Thu Jun 19 10:19:06.394572 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
 [Thu Jun 19 10:19:06.394771 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 23 09:31:13.611527 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Mon Jun 23 09:31:13.613098 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Jun 23 13:32:00.354708 2025] [php:notice] [pid 20:tid 20] [client 172.19.0.1:59402] 2025-06-23T13:32:00+00:00 [error] Uncaught Warning: Undefined variable $builder, referer: http://localhost/reset-password/check-email
+[Mon Jun 23 13:32:17.075602 2025] [php:notice] [pid 18:tid 18] [client 172.19.0.1:63180] 2025-06-23T13:32:17+00:00 [error] Uncaught Warning: Undefined variable $builder, referer: http://localhost/reset-password
+[Mon Jun 23 13:34:18.464726 2025] [php:notice] [pid 21:tid 21] [client 172.19.0.1:59698] 2025-06-23T13:34:18+00:00 [error] Uncaught Warning: Undefined variable $builder, referer: http://localhost/reset-password
+[Mon Jun 23 21:04:06.371555 2025] [php:notice] [pid 24:tid 24] [client 172.19.0.1:55536] 2025-06-23T21:04:06+00:00 [critical] Uncaught Exception: There is no extension able to load the configuration for "firewalls" (in "/var/www/html/config/packages/security.yaml"). Looked for namespace "firewalls", found "framework", "doctrine", "doctrine_migrations", "debug", "twig", "web_profiler", "stimulus", "turbo", "twig_extra", "security", "monolog", "maker", "symfonycasts_verify_email", "doctrine_mongodb", "twig_component", "easy_admin", "symfonycasts_reset_password" in /var/www/html/config/packages/security.yaml (which is being imported from "/var/www/html/src/Kernel.php")., referer: http://localhost/mdp/new
+[Mon Jun 23 21:04:58.652779 2025] [php:notice] [pid 21:tid 21] [client 172.19.0.1:63864] 2025-06-23T21:04:58+00:00 [critical] Uncaught Exception: Login throttling requires the Rate Limiter component. Try running "composer require symfony/rate-limiter"., referer: http://localhost/mdp/new
+[Tue Jun 24 13:39:05.789937 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 13:39:21.750725 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 13:39:21.750910 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 13:49:55.676045 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 13:50:06.528294 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 13:50:06.528612 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 14:04:40.286906 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 14:05:09.262918 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 14:05:09.263122 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 14:06:26.393512 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 14:06:33.590696 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 14:06:33.590797 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 14:10:23.123049 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 14:10:30.158270 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 14:10:30.158410 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 14:15:30.171875 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 14:16:46.288541 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 14:16:46.288633 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 14:18:36.683656 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 14:18:48.849441 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 14:18:48.850192 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 14:37:47.451061 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.5. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 24 14:38:06.625722 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Tue Jun 24 14:38:06.625885 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 24 15:18:12.506598 2025] [php:notice] [pid 19:tid 19] [client 192.168.65.1:23913] 2025-06-24T15:18:12+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting end of file
+[Tue Jun 24 15:18:15.096803 2025] [php:notice] [pid 20:tid 20] [client 192.168.65.1:42449] 2025-06-24T15:18:15+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting end of file
+[Tue Jun 24 15:31:11.427360 2025] [php:notice] [pid 21:tid 21] [client 192.168.65.1:45573] 2025-06-24T15:31:11+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting end of file
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.5. Set the 'ServerName' directive globally to suppress this message
+[Wed Aug 13 04:54:50.066208 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Wed Aug 13 04:54:50.127520 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 10 07:43:39.296645 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Wed Sep 10 07:43:39.297556 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Sep 21 21:05:21.452255 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Mon Sep 29 09:34:19.207708 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Mon Sep 29 09:34:19.208592 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.6. Set the 'ServerName' directive globally to suppress this message
+[Mon Sep 29 09:35:29.518315 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.22 OpenSSL/3.0.16 configured -- resuming normal operations
+[Mon Sep 29 09:35:29.519193 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
